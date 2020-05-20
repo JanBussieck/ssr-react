@@ -63,9 +63,7 @@ app.get("/products*", (req, res) => {
 });
 
 app.get("/productData.json", (req, res) => {
-  console.log('req', req);
   const category = req.query.category || 'all';
-  console.log('category', category);
   const productData = products.index;
   if (category === 'all') {
   res.json({ products: productData });
