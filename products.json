@@ -1,0 +1,20 @@
+{
+  "index": [
+    {
+      "name": "Winkelmessgerät B",
+      "category": "b"
+    },
+    {
+      "name": "Längenmessgerät B",
+      "category": "b"
+    },
+    {
+      "name": "Winkelmessgerät A",
+      "category": "a"
+    },
+    {
+      "name": "Längenmessgerät A",
+      "category": "a"
+    }
+  ]
+}
