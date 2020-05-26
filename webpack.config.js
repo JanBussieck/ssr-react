@@ -35,15 +35,10 @@ const clientConfig = {
   mode: "development",
   target: "web",
   entry: {
-    "home.js": path.resolve(__dirname, "src/public/home.js"),
+    "clientHome.js": path.resolve(__dirname, "src/public/clientHome.js"),
   },
   module: {
     rules: [js],
-  },
-  optimization: {
-    splitChunks: {
-      chunks: "all",
-    },
   },
   output: {
     path: path.resolve(__dirname, "dist/public"),
@@ -51,4 +46,19 @@ const clientConfig = {
   },
 };
 
-module.exports = [serverConfig, clientConfig];
+const ssrConfig = {
+  mode: "development",
+  target: "web",
+  entry: {
+    "serverHome.js": path.resolve(__dirname, "src/public/serverHome.js"),
+  },
+  module: {
+    rules: [js],
+  },
+  output: {
+    path: path.resolve(__dirname, "dist/public"),
+    filename: "[name]",
+  },
+};
+
+module.exports = [serverConfig, clientConfig, ssrConfig];
