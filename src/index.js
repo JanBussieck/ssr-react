@@ -49,7 +49,7 @@ app.get("/products*", (req, res) => {
           I am also static
         </div>
 
-        <script src="/static/home.js"></script>
+        <script src="/static/clientHome.js"></script>
       </body>
       </html>`;
 
